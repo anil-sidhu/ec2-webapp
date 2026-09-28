@@ -1,0 +1,1 @@
+pbcopy < ~/Downloads/ec2.pem
