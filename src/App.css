@@ -1,0 +1,122 @@
+.app-shell {
+  width: 100%;
+  min-height: 100svh;
+  display: grid;
+  place-items: center;
+  padding: 48px 20px;
+  box-sizing: border-box;
+}
+
+.hero-card {
+  width: min(760px, 100%);
+  padding: 36px;
+  border: 1px solid var(--border);
+  border-radius: 24px;
+  background: color-mix(in srgb, var(--bg), var(--social-bg) 45%);
+  box-shadow: var(--shadow);
+  text-align: left;
+}
+
+.eyebrow {
+  margin: 0 0 8px;
+  color: var(--accent);
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.intro {
+  max-width: 620px;
+  margin-bottom: 28px;
+}
+
+.prompt-form {
+  display: grid;
+  gap: 12px;
+}
+
+.prompt-form label {
+  color: var(--text-h);
+  font-weight: 700;
+}
+
+.prompt-form input,
+.prompt-form textarea {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 14px 16px;
+  color: var(--text-h);
+  background: var(--bg);
+  font: inherit;
+}
+
+.prompt-form textarea {
+  resize: vertical;
+}
+
+.prompt-form input:focus,
+.prompt-form textarea:focus {
+  border-color: var(--accent);
+  outline: 3px solid var(--accent-bg);
+}
+
+.prompt-form button {
+  justify-self: start;
+  margin-top: 8px;
+  border: 0;
+  border-radius: 999px;
+  padding: 13px 22px;
+  color: white;
+  background: var(--accent);
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.prompt-form button:disabled {
+  cursor: wait;
+  opacity: 0.7;
+}
+
+.help-box {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  margin: 24px 0;
+  padding: 14px;
+  border-radius: 14px;
+  background: var(--accent-bg);
+}
+
+.error-message {
+  margin-bottom: 18px;
+  color: #dc2626;
+  font-weight: 700;
+}
+
+.answer-card {
+  min-height: 150px;
+  padding: 22px;
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  background: var(--bg);
+  white-space: pre-wrap;
+}
+
+.answer-card h2 {
+  margin-bottom: 12px;
+}
+
+@media (max-width: 640px) {
+  .app-shell {
+    padding: 24px 14px;
+  }
+
+  .hero-card {
+    padding: 24px;
+  }
+}
