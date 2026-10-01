@@ -23,7 +23,7 @@ jobs:
           npm ci
           npm run build
 
-      - name: Configure SSH ok
+      - name: Configure SSH 
         run: |
           mkdir -p ~/.ssh
           chmod 700 ~/.ssh
